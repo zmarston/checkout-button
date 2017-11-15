@@ -1,0 +1,35 @@
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 33px;
+  border: solid darkgrey 6px;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 100px;
+  color: #555555;
+  background: rgba(217,217,217,1);
+  background: linear-gradient(to bottom, rgba(217,217,217,1) 0%, rgba(209,209,209,1) 50%, rgba(199,199,199,1) 51%, rgba(242,242,242,1) 100%);
+
+  }
+
+a::before {
+  position: absolute;
+  content: "★★";
+  color: #888888;
+  letter-spacing: 190px;
+  margin-left: -40px;
+  margin-top: -6px;
+}
+
+
+a::after {
+  position: absolute;
+  content: " ";
+  border: solid 5px green;
+  box-shadow: 10px 10px 5px #888888;
+  z-index: -1;
+  padding: 400px;
+}
